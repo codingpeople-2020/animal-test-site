@@ -17,7 +17,7 @@ function ResultPage() {
 
     // 카카오 SDK 초기화 및 공유버튼 설정
     if (window.Kakao && !window.Kakao.isInitialized()) {
-      window.Kakao.init("여기에_카카오_JavaScript_키_입력"); // 본인 키로 바꿔주세요
+      window.Kakao.init("a1430cbffb42965162f7212002ba0809"); // 본인 키로 바꿔주세요
     }
   }, [result]);
 
@@ -30,16 +30,16 @@ function ResultPage() {
           description: result.description,
           imageUrl: window.location.origin + result.image,
           link: {
-            mobileWebUrl: window.location.href,
-            webUrl: window.location.href,
+            mobileWebUrl: 'https://animal-test-site.vercel.app',
+            webUrl: 'https://animal-test-site.vercel.app',
           },
         },
         buttons: [
           {
             title: "나도 테스트해보기",
             link: {
-              mobileWebUrl: window.location.origin,
-              webUrl: window.location.origin,
+              mobileWebUrl: 'https://animal-test-site.vercel.app',
+              webUrl: 'https://animal-test-site.vercel.app',
             },
           },
         ],
