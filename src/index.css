@@ -180,15 +180,15 @@ button:focus, button:focus-visible {
   .start-container, .quiz-container {
     height: 60vh;
     width: 90%;
-    padding: 48px 0;
+    padding: 2.25vh 0;
   }
   .start-title {
     font-size: 2.2em;
-    padding: 36px 0;
+    padding: 1.7vh 0;
   }
   .start-description {
     font-size: 1.2em;
-    padding: 16px 24px 48px;
+    padding: 0.75vh 24px 2.25vh;
   }
   .start-button {
     width: 80%;
@@ -203,7 +203,7 @@ button:focus, button:focus-visible {
   }
   .question{
     font-size: 1.4em;
-    padding: 48px 0 36px 0;
+    padding: 2.25vh 0 1.7vh 0;
   }       
   .answer-box{
     width: 100%;
@@ -218,11 +218,11 @@ button:focus, button:focus-visible {
   .result-container {
     width: 90%;
     height: 80vh;
-    padding: 64px 0;
+    padding: 3vh 0;
   }
   .result-description{
     width: 90%;
-    padding: 36px 0;
+    padding: 1.7vh 0;
     font-size: 1.1em;
     line-height: 1.3;
   }
