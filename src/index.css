@@ -185,11 +185,11 @@ button:focus, button:focus-visible {
   }
   .start-title {
     font-size: 2.2em;
-    padding: 36px 0;
+    padding: 3.6vh 0;
   }
   .start-description {
     font-size: 1.2em;
-    padding: 16px 24px 48px;
+    padding: 1.6vh 24px 4.8vh;
   }
   .start-button {
     width: 80%;
@@ -204,7 +204,7 @@ button:focus, button:focus-visible {
   }
   .question{
     font-size: 1.4em;
-    padding: 48px 0 36px 0;
+    padding: 4.8vh 0 3v6vh 0;
   }       
   .answer-box{
     width: 100%;
@@ -219,14 +219,14 @@ button:focus, button:focus-visible {
   .result-container {
     width: 90%;
     height: 80vh;
-    padding: 64px 0;
+    padding: 6.4vh 0;
   }
   .result-image{
     max-width: 200px;
   }
   .result-description{
     width: 90%;
-    padding: 36px 0;
+    padding: 3.6vh 0;
     font-size: 1.1em;
     line-height: 1.3;
   }
