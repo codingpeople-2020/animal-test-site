@@ -23,17 +23,17 @@ function ResultPage() {
       script.onload = () => {
         if (window.Kakao && !window.Kakao.isInitialized()) {
           window.Kakao.init("a1430cbffb42965162f7212002ba0809"); // 여기에 본인 키
-          console.log("✅ Kakao SDK initialized");
+          // console.log("Kakao SDK initialized");
         }
       };
       script.onerror = () => {
-        console.error("❌ Kakao SDK 로딩 실패");
+        // console.error("Kakao SDK 로딩 실패");
       };
       document.head.appendChild(script);
     } else {
       if (window.Kakao && !window.Kakao.isInitialized()) {
         window.Kakao.init("a1430cbffb42965162f7212002ba0809");
-        console.log("✅ Kakao SDK initialized (from existing)");
+        // console.log("Kakao SDK initialized (from existing)");
       }
     }
   }, [result]);
@@ -67,7 +67,7 @@ function ResultPage() {
   if (!result) {
     return (
       <div style={{ padding: "40px", textAlign: "center" }}>
-        <h2>결과를 찾을 수 없어요 🐾</h2>
+        <h2>결과를 찾을 수 없어요!</h2>
         <button onClick={() => navigate("/")}>홈으로 가기</button>
       </div>
     );
@@ -84,7 +84,7 @@ function ResultPage() {
         <p className="result-description">
           {result.description}
         </p>
-
+        
         <div>
           <button className="kakao-share-button" onClick={shareKakao} style={{ marginRight: "10px" }}>
             카카오톡 공유하기
