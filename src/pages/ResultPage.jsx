@@ -15,10 +15,13 @@ function ResultPage() {
     // 페이지 제목 설정
     document.title = `내 안의 동물은 ${result.name}?`;
 
-    // 카카오 SDK 초기화 및 공유버튼 설정
-    if (window.Kakao && !window.Kakao.isInitialized()) {
-      window.Kakao.init("a1430cbffb42965162f7212002ba0809"); // 본인 키로 바꿔주세요
-      console.log("✅ Kakao SDK 초기화 완료");
+    if (typeof window.Kakao !== "undefined") {
+      if (!window.Kakao.isInitialized()) {
+        window.Kakao.init("a1430cbffb42965162f7212002ba0809"); // 올바른 키로 교체
+        console.log("✅ Kakao SDK Initialized");
+      }
+    } else {
+      console.error("❌ Kakao SDK가 로딩되지 않았습니다.");
     }
   }, [result]);
 
