@@ -47,16 +47,16 @@ function ResultPage() {
           description: result.description,
           imageUrl: window.location.origin + result.image,
           link: {
-            mobileWebUrl: 'https://animal-test-site.vercel.app',
-            webUrl: 'https://animal-test-site.vercel.app',
+            mobileWebUrl: 'https://animal-test-site.vercel.app/share.html',
+            webUrl: 'https://animal-test-site.vercel.app/share.html',
           },
         },
         buttons: [
           {
             title: "나도 테스트해보기",
             link: {
-              mobileWebUrl: 'https://animal-test-site.vercel.app',
-              webUrl: 'https://animal-test-site.vercel.app',
+              mobileWebUrl: 'https://animal-test-site.vercel.app/share.html',
+              webUrl: 'https://animal-test-site.vercel.app/share.html',
             },
           },
         ],
@@ -84,7 +84,7 @@ function ResultPage() {
         <p className="result-description">
           {result.description}
         </p>
-        
+
         <div>
           <button className="kakao-share-button" onClick={shareKakao} style={{ marginRight: "10px" }}>
             카카오톡 공유하기
