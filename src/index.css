@@ -180,11 +180,11 @@ button:focus, button:focus-visible {
   .start-container, .quiz-container {
     height: 60vh;
     width: 90%;
-    padding: 64px 0;
+    padding: 48px 0;
   }
   .start-title {
     font-size: 2.2em;
-    padding: 48px 0;
+    padding: 36px 0;
   }
   .start-description {
     font-size: 1.2em;
@@ -218,11 +218,8 @@ button:focus, button:focus-visible {
   .result-container {
     width: 90%;
     height: 80vh;
-    padding: 36px 0;
+    padding: 64px 0;
   }
-    .result-image{
-      max-width: 200px;
-    }
   .result-description{
     width: 90%;
     padding: 36px 0;
