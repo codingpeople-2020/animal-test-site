@@ -18,15 +18,12 @@ function ResultPage() {
     // 카카오 SDK 초기화 및 공유버튼 설정
     if (window.Kakao && !window.Kakao.isInitialized()) {
       window.Kakao.init("a1430cbffb42965162f7212002ba0809"); // 본인 키로 바꿔주세요
+      console.log("✅ Kakao SDK 초기화 완료");
     }
   }, [result]);
 
   const shareKakao = () => {
     if (window.Kakao) {
-      if (window.Kakao && !window.Kakao.isInitialized()) {
-        window.Kakao.init("a1430cbffb42965162f7212002ba0809"); // 본인 키로 바꿔주세요
-      }
-      
       window.Kakao.Share.sendDefault({
         objectType: "feed",
         content: {
