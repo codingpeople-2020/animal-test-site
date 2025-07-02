@@ -180,7 +180,7 @@ button:focus, button:focus-visible {
   .start-container, .quiz-container {
     height: 60vh;
     width: 90%;
-    padding: 64px 0;
+    padding: 3.2vh 0;
   }
   .start-title {
     font-size: 2.2em;
