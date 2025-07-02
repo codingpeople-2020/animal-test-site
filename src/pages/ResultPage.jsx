@@ -23,6 +23,10 @@ function ResultPage() {
 
   const shareKakao = () => {
     if (window.Kakao) {
+      if (window.Kakao && !window.Kakao.isInitialized()) {
+        window.Kakao.init("a1430cbffb42965162f7212002ba0809"); // 본인 키로 바꿔주세요
+      }
+      
       window.Kakao.Share.sendDefault({
         objectType: "feed",
         content: {
