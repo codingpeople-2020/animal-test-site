@@ -180,15 +180,15 @@ button:focus, button:focus-visible {
   .start-container, .quiz-container {
     height: 60dvh;
     width: 90%;
-    padding: 6.4dvh 0;
+    padding: 7.8dvh 0;
   }
   .start-title {
     font-size: 2.2em;
-    padding: 3.6dvh 0;
+    padding: 4.2dvh 0;
   }
   .start-description {
     font-size: 1.2em;
-    padding: 1.6dvh 24px 4.8dvh;
+    padding: 2dvh 24px 5.6dvh;
   }
   .start-button {
     width: 80%;
@@ -203,7 +203,7 @@ button:focus, button:focus-visible {
   }
   .question{
     font-size: 1.4em;
-    padding: 4.8dvh 0 36dvh 0;
+    padding: 5.6dvh 0 4.2dvh 0;
   }       
   .answer-box{
     width: 100%;
@@ -218,14 +218,14 @@ button:focus, button:focus-visible {
   .result-container {
     width: 90%;
     height: 80dvh;
-    padding: 6.4vh 0;
+    padding: 7.8vh 0;
   }
   .result-image{
-    max-width: 200px;
+    max-height: 20dvh;
   }
   .result-description{
     width: 90%;
-    padding: 3.6dvh 0;
+    padding: 4.2dvh 0;
     font-size: 1.1em;
     line-height: 1.3;
   }
