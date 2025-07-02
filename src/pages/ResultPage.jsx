@@ -15,13 +15,26 @@ function ResultPage() {
     // 페이지 제목 설정
     document.title = `내 안의 동물은 ${result.name}?`;
 
-    if (typeof window.Kakao !== "undefined") {
-      if (!window.Kakao.isInitialized()) {
-        window.Kakao.init("a1430cbffb42965162f7212002ba0809"); // 올바른 키로 교체
-        console.log("✅ Kakao SDK Initialized");
-      }
+    if (!document.querySelector("#kakao-sdk")) {
+      const script = document.createElement("script");
+      script.src = "https://developers.kakao.com/sdk/js/kakao.min.js";
+      script.async = true;
+      script.id = "kakao-sdk";
+      script.onload = () => {
+        if (window.Kakao && !window.Kakao.isInitialized()) {
+          window.Kakao.init("a1430cbffb42965162f7212002ba0809"); // 여기에 본인 키
+          console.log("✅ Kakao SDK initialized");
+        }
+      };
+      script.onerror = () => {
+        console.error("❌ Kakao SDK 로딩 실패");
+      };
+      document.head.appendChild(script);
     } else {
-      console.error("❌ Kakao SDK가 로딩되지 않았습니다.");
+      if (window.Kakao && !window.Kakao.isInitialized()) {
+        window.Kakao.init("a1430cbffb42965162f7212002ba0809");
+        console.log("✅ Kakao SDK initialized (from existing)");
+      }
     }
   }, [result]);
 
