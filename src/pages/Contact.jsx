@@ -23,6 +23,7 @@ const Contact = () => {
             <p className="description">
               · 서비스 개선에 대한 아이디어, 불편 사항, 또는 따뜻한 응원의 메시지도 환영합니다! 모두가 함께 만드는 테스트 공간이 되길 바랍니다.
             </p>
+            <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
         </div>
         <footer>
             <ul className="footer-nav">

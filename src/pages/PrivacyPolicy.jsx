@@ -42,7 +42,7 @@ const PrivacyPolicy = () => {
                 · 이름: 김민석 <br />
                 · 이메일: codinglab_usdd@naver.co.kr
             </p>
-            
+            <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
             </div>
             
         <footer>

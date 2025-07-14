@@ -35,6 +35,7 @@ const Terms = () => {
               · 이용약관과 관련된 문의사항은 아래 이메일로 연락해주세요. <br />
               · 이메일: codinglab_usdd@naver.co.kr
             </p>
+            <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
         </div>
         <footer>
             <ul className="footer-nav">

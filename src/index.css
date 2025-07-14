@@ -280,6 +280,9 @@ footer .copy{
   left: 50%;
   transform: translate(-50%, 0);
 }
+#adfit-DAN-flhH6MuBurZtwCKc{
+  display: none;
+}
 
 @media (max-width: 840px) {
   .start-container, .quiz-container {
