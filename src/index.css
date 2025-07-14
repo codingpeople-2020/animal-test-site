@@ -201,7 +201,7 @@ button:focus, button:focus-visible {
     width: 10px;
 }
 .footer-nav-container::-webkit-scrollbar-thumb {
-    background-color: #00979c;
+    background-color: #ccc;
     border-radius: 10px;
     background-clip: padding-box;
     border: 2px solid transparent;
