@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import questions from '../data/questions';
 
 function QuizPage() {
@@ -49,7 +50,15 @@ function QuizPage() {
           ))}
         </div>
       </div>
-      <p className="copy">© 2025. CodingPeople All rights reserved</p>
+      <footer>
+          <ul className="footer-nav">
+            <li><Link style={{ color:"#999" }} to="/about">About Us</Link></li>
+            <li><Link style={{ color:"#999" }} to="/privacy">Privacy Policy</Link></li>
+            <li><Link style={{ color:"#999" }} to="/terms">Terms of Service</Link></li>
+            <li><Link style={{ color:"#999" }} to="/contact">Contact Us</Link></li>
+          </ul>
+          <p className="copy">© 2025. CodingPeople All rights reserved</p>
+        </footer>
     </div>
   );
 }

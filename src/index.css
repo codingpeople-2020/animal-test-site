@@ -164,18 +164,88 @@ button:focus, button:focus-visible {
 .kakao-share-button:hover{
   color: #f9dd00;
   background-color: #3c1e1e;
-  
 }
-.copy{
+
+.home-button {
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  top: 13%;
+  left: 10%;
+  /* transform: translate(-50%, 0); */
+  width: 96px;
+  padding: 8px 0;
+  background-color: #eed4c5;
+  border-radius: 6px;
+  text-decoration: none;
   text-align: center;
-  padding-bottom: 14px;
-  font-size: 12px;
-  color: #999;
+  font-size: 14px;
+}
+
+.footer-nav-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 64vh;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 48px 60px;
+  margin: 0 auto;
+}
+.footer-nav-container .title{
+  padding: 12px 0 36px 0;
+  color: #333;
+  font-size: 32px;
+}
+.footer-nav-container .title-description{
+  color: #444;
+  font-size: 16px;
   font-weight: normal;
 }
+.footer-nav-container .sub-title{
+  padding: 16px 0 8px 0;
+  color: #333;
+  font-size: 18px;
+}
+.footer-nav-container .description{
+  padding: 0 0 4px 12px;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.4;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+  width: 80%;
+  font-size: 12px;
+  font-weight: normal;
+}
+footer .footer-nav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+footer .footer-nav li{
+  border-right: 1px solid #333;
+  padding: 1px 16px;
+  border-color: #999;
+}
+footer .footer-nav li:last-child{
+  border: none;
+  
+}
+footer .copy{
+  text-align: center;
+  padding: 18px 0;
+  color: #777;
+}
+
 @media (max-width: 840px) {
   .start-container, .quiz-container {
     height: 60dvh;
@@ -228,5 +298,50 @@ button:focus, button:focus-visible {
     padding: 4.2dvh 0;
     font-size: 1.1em;
     line-height: 1.3;
+  }
+
+  .home-button {
+    top: 8%;
+    left: 5%;
+    width: 84px;
+    padding: 8px 0;
+    font-size: 12px;
+  }
+
+  .footer-nav-container{
+    width: 90%;
+    height: 68vh;
+    padding: 24px;
+  }
+  .footer-nav-container .title{
+    padding: 8px 0 18px 0;
+    font-size: 24px;
+  }
+  .footer-nav-container .title-description{
+    font-size: 12px;
+  }
+  .footer-nav-container .sub-title{
+    padding: 10px 0 6px 0;
+    font-size: 16px;
+  }
+  .footer-nav-container .description{
+    padding: 0 0 4px 8px;
+    color: #444;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  footer{
+    width: 90%;
+    font-size: 11px;
+  }
+  footer .footer-nav{
+    justify-content: center;
+  }
+  footer .footer-nav li{
+    padding: 1px 8px;
+  }
+  footer .copy{
+    padding: 16px 0;
   }
 }
