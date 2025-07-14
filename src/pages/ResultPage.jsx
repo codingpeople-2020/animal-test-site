@@ -49,16 +49,16 @@ function ResultPage() {
           description: result.description,
           imageUrl: window.location.origin + result.image,
           link: {
-            mobileWebUrl: 'https://animal-test-site.vercel.app/share.html',
-            webUrl: 'https://animal-test-site.vercel.app/share.html',
+            mobileWebUrl: 'https://animal-test-site.vercel.app',
+            webUrl: 'https://animal-test-site.vercel.app',
           },
         },
         buttons: [
           {
             title: "나도 테스트해보기",
             link: {
-              mobileWebUrl: 'https://animal-test-site.vercel.app/share.html',
-              webUrl: 'https://animal-test-site.vercel.app/share.html',
+              mobileWebUrl: 'https://animal-test-site.vercel.app',
+              webUrl: 'https://animal-test-site.vercel.app',
             },
           },
         ],
