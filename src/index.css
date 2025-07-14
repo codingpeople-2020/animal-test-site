@@ -139,6 +139,8 @@ img {
   white-space: pre-line;
 }
 
+
+
 button {
   border-radius: 8px;
   border: none;
@@ -246,6 +248,16 @@ footer .copy{
   color: #777;
 }
 
+#adfit-DAN-RGH7G9VOVyUYJJav{
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#adfit-DAN-Pp1Md32up4KoG5gr{
+  display: none;
+}
+
 @media (max-width: 840px) {
   .start-container, .quiz-container {
     height: 60dvh;
@@ -291,7 +303,7 @@ footer .copy{
     padding: 7.8vh 0;
   }
   .result-image{
-    max-height: 28dvh;
+    max-height: 24dvh;
   }
   .result-description{
     width: 90%;
@@ -343,5 +355,16 @@ footer .copy{
   }
   footer .copy{
     padding: 16px 0;
+  }
+
+  #adfit-DAN-RGH7G9VOVyUYJJav{
+    display: none;
+  }
+  #adfit-DAN-Pp1Md32up4KoG5gr{
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }

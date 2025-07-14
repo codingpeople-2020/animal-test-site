@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import results from "../data/results";
 import { useEffect } from "react";
+import AdFitUnit from '../components/AdFitUnit';
 
 function ResultPage() {
   const { type } = useParams(); // URL의 동물 타입
@@ -91,12 +92,6 @@ function ResultPage() {
             카카오톡 공유하기
           </button>
           <button onClick={() => navigate("/")}>다시 테스트하기</button>
-        </div>
-
-        {/* 👉 광고 위치 */}
-        <div style={{ marginTop: "50px" }}>
-          {/* 예: Google Adsense 코드 삽입 */}
-          {/* <ins className="adsbygoogle" ...></ins> */}
         </div>
       </div>
       <footer>

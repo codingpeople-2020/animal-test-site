@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import questions from '../data/questions';
+import AdFitUnit from '../components/AdFitUnit';
 
 function QuizPage() {
   const [current, setCurrent] = useState(0);
@@ -27,6 +28,8 @@ function QuizPage() {
 
   return (
     <div className="container">
+      <AdFitUnit unit="DAN-RGH7G9VOVyUYJJav" width="728" height="90" />
+      <AdFitUnit unit="DAN-Pp1Md32up4KoG5gr" width="320" height="100" />
       <div className="quiz-container">
         <p className="progress-count">
           Q{current + 1} / {questions.length}
