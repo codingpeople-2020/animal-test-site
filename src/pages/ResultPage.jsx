@@ -77,6 +77,8 @@ function ResultPage() {
 
   return (
     <div className="container">
+      <AdFitUnit unit="DAN-g4Yf8bh8OygdzV7d" width="728" height="90" />
+      <AdFitUnit unit="DAN-Pp1Md32up4KoG5gr" width="320" height="100" />
       <div className="result-container">
         <h1 className="result-title">당신은 <span style={{ color: "#4f46e5", backgroundColor: "#e5f4f9", padding: "4px 8px" }}>{result.name}</span> 타입!</h1>
         <img  className="result-image" 

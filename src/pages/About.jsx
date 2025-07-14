@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import AdFitUnit from '../components/AdFitUnit';
 
 const About = () => {
   return (
     <div className="container">
+        <AdFitUnit unit="DAN-g4Yf8bh8OygdzV7d" width="728" height="90" />
+        
         <p className="home-button"><Link to="/">🏠 HOME</Link></p>
         <div className="footer-nav-container">
             <h1 className="title">🎨 우리 이야기</h1>
@@ -34,6 +37,7 @@ const About = () => {
               · 회사 및 서비스 소개와 관련된 문의사항은 아래 이메일로 연락해주세요. <br />
               · 이메일: codinglab_usdd@naver.co.kr
             </p>
+            <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
         </div>
         <footer>
             <ul className="footer-nav">

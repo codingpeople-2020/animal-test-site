@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import AdFitUnit from '../components/AdFitUnit';
 
 const Contact = () => {
   return (
     <div className="container">
+        <AdFitUnit unit="DAN-g4Yf8bh8OygdzV7d" width="728" height="90" />
         <p className="home-button"><Link to="/">🏠 HOME</Link></p>
         <div className="footer-nav-container">
             <h1 className="title">📬 문의 하기</h1>
