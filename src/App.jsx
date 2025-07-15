@@ -7,6 +7,7 @@ import About from './pages/About';
 import Terms from './pages/Terms';
 import Contact from './pages/Contact';
 import GuidePage from './pages/GuidePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );

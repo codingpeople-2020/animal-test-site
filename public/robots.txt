@@ -1,0 +1,6 @@
+# 모든 검색엔진에 사이트 전체 접근 허용
+User-agent: *
+Allow: /
+
+# 사이트맵 위치 명시
+Sitemap: https://animal-test-site.vercel.app/sitemap.xml
