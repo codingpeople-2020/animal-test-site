@@ -8,6 +8,7 @@ const PrivacyPolicy = () => {
         <AdFitUnit unit="DAN-g4Yf8bh8OygdzV7d" width="728" height="90" />
         <p className="home-button"><Link to="/">🏠 HOME</Link></p>
         <div className="footer-nav-container">
+            <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
             <h1 className="title">📜 개인 정보 처리 방침</h1>
             <h3 className="title-description">
                 <strong>CodingPeople</strong>은(는) 이용자의 개인정보를 중요하게 생각하며,
@@ -42,7 +43,6 @@ const PrivacyPolicy = () => {
                 · 이름: 김민석 <br />
                 · 이메일: codinglab_usdd@naver.co.kr
             </p>
-            <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
             </div>
             
         <footer>

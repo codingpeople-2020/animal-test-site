@@ -104,7 +104,7 @@ img {
 }
 
 /* ResultPage.jsx */
-.result-container, .guide-container {
+.result-container, .guide-container, .more-tests-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -120,16 +120,16 @@ img {
   overflow: auto;
 }
 
-.guide-container::-webkit-scrollbar {
+.guide-container::-webkit-scrollbar, .more-tests-container::-webkit-scrollbar {
     width: 10px;
 }
-.guide-container::-webkit-scrollbar-thumb {
+.guide-container::-webkit-scrollbar-thumb, .more-tests-container::-webkit-scrollbar-thumb {
     background-color: #ccc;
     border-radius: 10px;
     background-clip: padding-box;
     border: 2px solid transparent;
 }
-.guide-container::-webkit-scrollbar-track {
+.guide-container::-webkit-scrollbar-track, .more-tests-container::-webkit-scrollbar-track {
     background-color: #eee;
     border-radius: 10px;
     box-shadow: inset 0px 0px 5px white;
@@ -183,6 +183,35 @@ img {
   font-size: 18px;
 }
 
+.tests-section{
+  width: 72%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 18px 0;
+}
+.tests-section li{
+  width: 30%;
+  /* background-color: #ccc;
+  border: 1px solid #f00; */
+  padding: 16px 15px 22px 15px;
+}
+.tests-section li:nth-child(3n){
+  padding: 0;
+}
+.tests-section li a{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.tests-section li a img{
+  width: 100%;
+  object-fit: contain;
+  border: 1px solid #e5e6e7;
+}
+
 button {
   border-radius: 8px;
   border: none;
@@ -217,6 +246,15 @@ button:focus, button:focus-visible {
 .kakao-share-button:hover{
   color: #f9dd00;
   background-color: #3c1e1e;
+}
+
+.button-box .more-tests-button{
+  width: 21%;
+  background-color: #ec4899;
+  color: #ffffff;
+}
+.button-box .more-tests-button:hover{
+  background-color: #db2777;
 }
 
 .home-button {
@@ -316,21 +354,25 @@ footer .copy{
   color: #777;
 }
 
+/* PC_홈_상단_배너 */
 #adfit-DAN-RGH7G9VOVyUYJJav{
   position: absolute;
   top: 12%;
   left: 50%;
   transform: translate(-50%, 0);
 }
+/* M_홈_상단_배너 */
 #adfit-DAN-Pp1Md32up4KoG5gr{
   display: none;
 }
+/* PC_결과_상단_배너 */
 #adfit-DAN-g4Yf8bh8OygdzV7d{
   position: absolute;
   top: 4%;
   left: 50%;
   transform: translate(-50%, 0);
 }
+/* M_하단_얇은배너 */
 #adfit-DAN-flhH6MuBurZtwCKc{
   display: none;
 }
@@ -405,6 +447,33 @@ footer .copy{
     font-size: 16px;
   }
 
+  .tests-section{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 18px 0;
+  }
+  .tests-section li{
+    width: 96%;
+    padding: 20px 15px;
+  }
+  .tests-section li:nth-child(3n){
+    padding: 0;
+  }
+  .tests-section li a{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  .tests-section li a img{
+    width: 100%;
+    object-fit: contain;
+    border: 1px solid #e5e6e7;
+  }
+
   .home-button {
     top: 8%;
     left: 5%;
@@ -414,6 +483,9 @@ footer .copy{
   }
 
   .button-box .tip-button{
+    width: 86%;
+  }
+  .button-box .more-tests-button{
     width: 86%;
   }
 
@@ -454,9 +526,11 @@ footer .copy{
     padding: 16px 0;
   }
 
+  /* PC_홈_상단_배너 */
   #adfit-DAN-RGH7G9VOVyUYJJav{
     display: none;
   }
+  /* M_홈_상단_배너 */
   #adfit-DAN-Pp1Md32up4KoG5gr{
     display: block;
     position: absolute;
@@ -464,7 +538,17 @@ footer .copy{
     left: 50%;
     transform: translate(-50%, 0);
   }
+  /* PC_결과_상단_배너 */
   #adfit-DAN-g4Yf8bh8OygdzV7d{
     display: none;
+  }
+  .ad-box{
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 8px;
+  }
+  /* M_하단_얇은배너 */
+  #adfit-DAN-flhH6MuBurZtwCKc{
+    display: block;
   }
 }

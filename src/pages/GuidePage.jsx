@@ -64,6 +64,9 @@ function GuidePage() {
             결과 페이지로 돌아가기
             </button>
         </div>
+        <div className="ad-box">
+          <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
+        </div>
         </div>
         <footer>
           <ul className="footer-nav">

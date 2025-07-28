@@ -91,10 +91,12 @@ function ResultPage() {
 
         <div className="button-box">
           <button className="tip-button" onClick={() => navigate(`/guide/${type}`)}  style={{ marginBottom: "10px" }}>활용법 보기</button> <br />
-          <button className="kakao-share-button" onClick={shareKakao} style={{ marginRight: "10px" }}>
-            카카오톡 공유하기
-          </button>
-          <button onClick={() => navigate("/")}>다시 테스트하기</button>
+          <button className="kakao-share-button" onClick={shareKakao} style={{ marginRight: "10px" }}>카카오톡 공유하기</button>
+          <button onClick={() => navigate("/")}>다시 테스트하기</button><br /><br />
+          <button className="more-tests-button" onClick={() => navigate("/more-tests")}>🎯 다른 테스트도 해보기</button>
+        </div>
+        <div className="ad-box">
+          <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
         </div>
       </div>
       <footer>

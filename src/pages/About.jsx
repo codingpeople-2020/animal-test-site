@@ -9,6 +9,7 @@ const About = () => {
         
         <p className="home-button"><Link to="/">🏠 HOME</Link></p>
         <div className="footer-nav-container">
+            <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
             <h1 className="title">🎨 우리 이야기</h1>
             <p className="title-description">
               <strong>CodingPeople</strong>은 사람의 감성과 데이터를 연결하여,
@@ -37,7 +38,6 @@ const About = () => {
               · 회사 및 서비스 소개와 관련된 문의사항은 아래 이메일로 연락해주세요. <br />
               · 이메일: codinglab_usdd@naver.co.kr
             </p>
-            <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
         </div>
         <footer>
             <ul className="footer-nav">

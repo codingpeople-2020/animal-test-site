@@ -8,6 +8,7 @@ const Terms = () => {
         <AdFitUnit unit="DAN-g4Yf8bh8OygdzV7d" width="728" height="90" /> 
         <p className="home-button"><Link to="/">🏠 HOME</Link></p>
         <div className="footer-nav-container">
+            <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
             <h1 className="title">🧾 이용 약관</h1>
             <h2 className="sub-title">1. 서비스 소개</h2>
             <p className="description">
@@ -35,7 +36,6 @@ const Terms = () => {
               · 이용약관과 관련된 문의사항은 아래 이메일로 연락해주세요. <br />
               · 이메일: codinglab_usdd@naver.co.kr
             </p>
-            <AdFitUnit unit="DAN-flhH6MuBurZtwCKc" width="320" height="50" />
         </div>
         <footer>
             <ul className="footer-nav">
