@@ -16,8 +16,8 @@ const MoreTests = () => {
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" rel="noopener noreferrer" >
-                <img src="/images/preparing.png" alt="" />
+              <a href="https://love-ability-score.vercel.app/" target="_blank" rel="noopener noreferrer" >
+                <img src="/images/love-ability-score.png" alt="" />
               </a>
             </li>
             <li>
